@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clients>
+    <client>
+        <birthDate>1980-04-12</birthDate>
+        <lastName>Smith</lastName>
+        <name>John</name>
+        <pesel>11100011100</pesel>
+    </client>
+    <client>
+        <birthDate>1948-09-03</birthDate>
+        <lastName>Macierewicz</lastName>
+        <name>Antoni</name>
+        <pesel>11111111111</pesel>
+    </client>
+    <client>
+        <birthDate>1992-06-27</birthDate>
+        <lastName>Kwit</lastName>
+        <name>Piotr</name>
+        <pesel>92062705911</pesel>
+    </client>
+</clients>

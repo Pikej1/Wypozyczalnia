@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<movies>
+    <movie>
+        <genre>Sci-fi/action</genre>
+        <manufactureYear>1999</manufactureYear>
+        <title>Matrix</title>
+    </movie>
+    <movie>
+        <genre>Comedy</genre>
+        <manufactureYear>2001</manufactureYear>
+        <title>Schrek</title>
+    </movie>
+    <movie>
+        <genre>Thriller</genre>
+        <manufactureYear>1999</manufactureYear>
+        <title>Fightclub</title>
+    </movie>
+    <movie>
+        <genre>Sci-Fi</genre>
+        <manufactureYear>1977</manufactureYear>
+        <title>Gwiezdne Wojny: Część IV - Nowa nadzieja</title>
+    </movie>
+</movies>

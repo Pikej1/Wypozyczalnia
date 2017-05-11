@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kwitpiotr.views.RootController">
+   <left>
+      <TabPane prefHeight="400.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab onSelectionChanged="#selectMovieTable" text="FILMY">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="movieTable" prefHeight="371.0" prefWidth="213.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="titleColumn" prefWidth="159.0" text="Tytuł" />
+                            <TableColumn fx:id="genreColumn" prefWidth="90.0" text="Gatunek" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab onSelectionChanged="#selectClientTable" text="KLIENCI">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="clientTable" prefHeight="371.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="125.0" text="Imię" />
+                            <TableColumn fx:id="lastNameColumn" prefWidth="124.0" text="Nazwisko" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab onSelectionChanged="#selectRentTab" text="Historia wypożyczeń">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="rentTable" prefHeight="299.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="130.0" text="Wypożyczający">
+                                 <columns>
+                                    <TableColumn fx:id="rentingClientNameColumn" prefWidth="65.0" text="Imię" />
+                                    <TableColumn fx:id="rentingClientLastNameColumn" prefWidth="74.0" text="Nazwisko" />
+                                 </columns></TableColumn>
+                              <TableColumn fx:id="rentedMovieColumn" prefWidth="62.0" text="Film" />
+                              <TableColumn fx:id="startDateColumn" prefWidth="48.0" text="Data wypożyczenia" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </left>
+   <center>
+      <AnchorPane prefWidth="400.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></AnchorPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="463.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <RadioButton fx:id="button" mnemonicParsing="false" text="Pokaż tylko dostępne filmy" translateX="-300.0" />
+            <Button maxWidth="40.0" mnemonicParsing="false" onAction="#handleEdit" text="Edytuj" translateX="-10.0" />
+            <Button maxWidth="0.0" mnemonicParsing="false" onAction="#handleNew" prefHeight="0.0" text="Nowy" translateX="-10.0" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ButtonBar>
+   </bottom>
+</BorderPane>
