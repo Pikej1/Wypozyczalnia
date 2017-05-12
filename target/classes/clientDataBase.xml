@@ -30,4 +30,10 @@
         <name>Jerzy</name>
         <pesel>47041803205</pesel>
     </client>
+    <client>
+        <birthDate>1983-10-10</birthDate>
+        <lastName>Kowalski</lastName>
+        <name>Jan</name>
+        <pesel>83101045339</pesel>
+    </client>
 </clients>
