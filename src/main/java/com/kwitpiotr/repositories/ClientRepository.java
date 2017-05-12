@@ -64,9 +64,9 @@ public class ClientRepository {
 		File tempFile = new File("");
 		String dirPath = tempFile.getAbsolutePath();
 		String tab[] = dirPath.split("\\\\");
-		if(!tab[tab.length-1].equals(tab[tab.length-2])){
+		/*if(!tab[tab.length-1].equals(tab[tab.length-2])){
 			dirPath += "//" + tab[tab.length-1];
-		}
+		}*/
 		return dirPath + "//";
 	}
 }
