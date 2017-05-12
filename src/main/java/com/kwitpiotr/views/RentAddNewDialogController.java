@@ -121,6 +121,7 @@ public class RentAddNewDialogController {
 	
 	public void setRepository(MainApp mainApp){
 		clientTable.setItems(mainApp.getClientRep());
-		movieTable.setItems(mainApp.getMovieRep());
+		//movieTable.setItems(mainApp.getMovieRep());
+		movieTable.setItems(mainApp.getAvaiableMovies());
 	}
 }

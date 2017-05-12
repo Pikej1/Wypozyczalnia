@@ -2,31 +2,16 @@
 <rents>
     <rent>
         <client>
-            <birthDate>1980-04-12</birthDate>
-            <lastName>Smith</lastName>
-            <name>John</name>
-            <pesel>11100011</pesel>
-        </client>
-        <endDate>2017-05-11</endDate>
-        <movie>
-            <genre>Sci-fi/action</genre>
-            <manufactureYear>1999</manufactureYear>
-            <title>Matrix</title>
-        </movie>
-        <startDate>2017-05-11</startDate>
-    </rent>
-    <rent>
-        <client>
-            <birthDate>1980-04-12</birthDate>
-            <lastName>Smith</lastName>
-            <name>John</name>
-            <pesel>11100011</pesel>
+            <birthDate>1992-06-27</birthDate>
+            <lastName>Kwit</lastName>
+            <name>Piotr</name>
+            <pesel>92062705911</pesel>
         </client>
         <movie>
             <genre>Comedy</genre>
             <manufactureYear>2001</manufactureYear>
             <title>Schrek</title>
         </movie>
-        <startDate>2017-05-11</startDate>
+        <startDate>2017-05-12</startDate>
     </rent>
 </rents>

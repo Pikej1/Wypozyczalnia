@@ -23,25 +23,14 @@ public class MainApp extends Application {
 	
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-	
-	//private ObservableList<Movie> movieRep = FXCollections.observableArrayList();
+
 	private MovieRepository movieRep = new MovieRepository();
 	private ClientRepository clientRep = new ClientRepository();
 	private RentRepository rentRep = new RentRepository();
-	//private ObservableList<Client> clientRep = FXCollections.observableArrayList();
-	//private ObservableList<Rent> rentRep = FXCollections.observableArrayList();
 	
 	
 	public MainApp() {
 		// TODO Auto-generated constructor stub
-    	
-    	/*clientRep.add(new Client("John", "Smith", LocalDate.of(1980, 4, 12), 11100011));
-    	clientRep.add(new Client("Antoni", "Macierewicz", LocalDate.of(1948, 9, 3), 11111111));
-    	clientRep.add(new Client("Andrzej", "Dupa", LocalDate.of(1970, 1, 1),99999999));
-    	*/
-    	//rentRep.add(new Rent(movieRep.getRepository().get(0), clientRep.getRepository().get(1)));
-    	//rentRep.add(new Rent(movieRep.getRepository().get(1), clientRep.getRepository().get(0)));
-    	//rentRep.get(0).returnItem();
 	}
 	
 	private void initMainLayout() {

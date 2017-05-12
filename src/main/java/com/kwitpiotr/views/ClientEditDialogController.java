@@ -72,9 +72,13 @@ public class ClientEditDialogController {
     	
     	if(nameField.getText() == null || nameField.getText().length() == 0){
     		errorMessage += "Pole 'imię' nie zostało wypełnione poprawnie.\n";
+    	}else if(!nameField.getText().matches("[a-zA-Z]+")){
+    		errorMessage += "Pole 'imię' może zawierać wyłącznie litery.";
     	}
     	if(lastNameField.getText() == null || lastNameField.getText().length() == 0){
     		errorMessage += "Pole 'nazwisko' nie zostało wypełnione poprawnie.\n";
+    	}else if(!lastNameField.getText().matches("[a-zA-Z]+")){
+    		errorMessage += "Pole 'nazwisko' może zawierać wyłącznie litery.";
     	}
     	if(birthDateField.getText() == null || birthDateField.getText().length() == 0){
     		errorMessage += "Pole 'data urodzenia' nie zostało wypełnione poprawnie.\n";
@@ -83,8 +87,10 @@ public class ClientEditDialogController {
     			errorMessage += "Wypełnij pole 'data urodzenia' urzywając formatu dd-MM-yyyy.";
     		}
     	}
-    	if(peselField.getText() == null || peselField.getText().length() != 11){
-    		errorMessage += "Podano nieprawidłowy PESEL";
+    	if(peselField.getText() == null || peselField.getText().length() == 0){
+    		errorMessage += "Pole 'pesel' nie zostało wypełnione poprawnie.";
+    	}else if(peselField.getText().length() != 11){
+    		errorMessage += "Ilość znaków w podanym PESEL'u jest niepoprawna.";
     	}else{
     		//try to parse PESEL into Integer
     		try{

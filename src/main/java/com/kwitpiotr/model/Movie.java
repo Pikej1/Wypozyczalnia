@@ -55,6 +55,7 @@ public class Movie {
 	public StringProperty genreProperty(){
 		return genre;
 	}
+
 	public boolean isRented() {
 		return rented.get();
 	}

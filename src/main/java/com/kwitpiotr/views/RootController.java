@@ -1,11 +1,8 @@
 package com.kwitpiotr.views;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import com.kwitpiotr.MainApp;
 import com.kwitpiotr.model.Client;
 import com.kwitpiotr.model.Movie;
@@ -43,7 +40,9 @@ public class RootController {
 	private TableColumn<Rent, LocalDate> startDateColumn;
 	
 	@FXML
-	private RadioButton button;
+	private Button button;
+	@FXML
+	private Button secondButton;
 
 	private int selectedTab;
 	
@@ -81,12 +80,8 @@ public class RootController {
 				(observable, oldValue, newValue) -> showRentDetails(newValue));
 		
 		button.setOnAction(event -> movieTable.setItems(mainApp.getAvaiableMovies()));
-		/*button.setOnAction(event -> {
-			if(button.isSelected()) movieTable.setItems(mainApp.getAvaiableMovies());
-			else movieTable.setItems(mainApp.getMovieRep());
-		});*/
+		secondButton.setOnAction(event -> movieTable.setItems(mainApp.getMovieRep()));
 	}
-	
 	/**
 	 * Adding new Client after pressing button 'Dodaj nowy'
 	 */
@@ -233,10 +228,6 @@ public class RootController {
 	@FXML
 	private void selectRentTab(){
 		selectedTab = 3;
-	}
-	@FXML
-	private void getAvaiableOnly(){
-		
 	}
 	
 	public void setMainApp(MainApp mainApp){

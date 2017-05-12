@@ -20,4 +20,14 @@
         <manufactureYear>1977</manufactureYear>
         <title>Gwiezdne Wojny: Część IV - Nowa nadzieja</title>
     </movie>
+    <movie>
+        <genre>Melodramat</genre>
+        <manufactureYear>1997</manufactureYear>
+        <title>Titanic</title>
+    </movie>
+    <movie>
+        <genre>Akcja</genre>
+        <manufactureYear>2016</manufactureYear>
+        <title>Deadpool</title>
+    </movie>
 </movies>

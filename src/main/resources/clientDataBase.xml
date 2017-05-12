@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <clients>
     <client>
-        <birthDate>1980-04-12</birthDate>
-        <lastName>Smith</lastName>
-        <name>John</name>
-        <pesel>11100011100</pesel>
-    </client>
-    <client>
-        <birthDate>1948-09-03</birthDate>
-        <lastName>Macierewicz</lastName>
-        <name>Antoni</name>
-        <pesel>11111111111</pesel>
+        <birthDate>1946-09-08</birthDate>
+        <lastName>Krawczyk</lastName>
+        <name>Krzysztof</name>
+        <pesel>46090855313</pesel>
     </client>
     <client>
         <birthDate>1992-06-27</birthDate>
         <lastName>Kwit</lastName>
         <name>Piotr</name>
         <pesel>92062705911</pesel>
+    </client>
+    <client>
+        <birthDate>1977-12-03</birthDate>
+        <lastName>Małysz</lastName>
+        <name>Adam</name>
+        <pesel>77120345937</pesel>
+    </client>
+    <client>
+        <birthDate>1980-04-12</birthDate>
+        <lastName>Smith</lastName>
+        <name>John</name>
+        <pesel>11100011100</pesel>
+    </client>
+    <client>
+        <birthDate>1947-04-18</birthDate>
+        <lastName>Stuhr</lastName>
+        <name>Jerzy</name>
+        <pesel>47041803205</pesel>
+    </client>
+    <client>
+        <birthDate>1983-10-10</birthDate>
+        <lastName>Kowalski</lastName>
+        <name>Jan</name>
+        <pesel>83101045339</pesel>
     </client>
 </clients>

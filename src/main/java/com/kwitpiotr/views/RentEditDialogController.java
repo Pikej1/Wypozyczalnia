@@ -71,7 +71,7 @@ public class RentEditDialogController {
 	}
 	
 	public void handleOk(){
-		if(!rent.isReturned() && endDateLabel.getText().length() > 0){
+		if(!rent.isReturned() && tempEndDate != null){
 			rent.setEndDate(tempEndDate);
 			rent.returnItem();
 		}

@@ -80,7 +80,7 @@ public class Rent {
 	public BooleanProperty returnedProperty() {
 		return returned;
 	}
-	
+
 	public boolean isReturned(){
 		return returned.get();
 	}

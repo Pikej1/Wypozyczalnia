@@ -74,7 +74,9 @@ public class MovieEditDialogController {
     	}else{
     		//try to parse manufactureYear into Integer
     		try{
-    			Integer.parseInt(manufYearField.getText());
+    			int temp = Integer.parseInt(manufYearField.getText());
+    			if(temp < 1900 || temp > 2020)
+    				errorMessage += "Podany rok produkcji jest nieprawidłowy. Podaj datę z zakres 1900 - 2020.";
     		}catch(NumberFormatException e){
     			errorMessage += "Rok produkcji musi składać się wyłącznie z cyfr.\n";
     		}

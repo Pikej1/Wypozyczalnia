@@ -17,8 +17,9 @@ public class RentRepository {
 
 	public RentRepository(){
 		rentRep = FXCollections.observableArrayList();
-		file = new File("src//main//resources//rentDataBase.xml");
-		
+		//file = new File("WypozyczalniaPiotrKwit//src//main//resources//rentDataBase.xml");
+		file = new File(getDirPath() + "src//main//resources//rentDataBase.xml");
+
 		loadRepositoryFromFile();
 	}
 	
@@ -34,7 +35,7 @@ public class RentRepository {
 			rentRep.addAll(wrapper.getRentList());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 	
@@ -58,5 +59,21 @@ public class RentRepository {
 	
 	public ObservableList<Rent> getRepository(){
 		return rentRep;
+	}
+
+	/**
+	 * Getting absolute path of repository file to avoid troubles. There's two different paths in Eclipse and IntelliJ.
+	 * Moreover the path will be different after downloading application directly from GitHUB. This method seems to be
+	 * little cheesy but works. And as said my mate: "If something looks stupid but works, it's no longer stupid".
+	 * @return absolute path of directory file
+	 */
+	private String getDirPath() {
+		File tempFile = new File("");
+		String dirPath = tempFile.getAbsolutePath();
+		String tab[] = dirPath.split("\\\\");
+		if(tab[tab.length-1].equals(tab[tab.length-2])){
+			dirPath += "//";
+		}else dirPath += "//" + tab[tab.length-1] + "//";
+		return dirPath;
 	}
 }
